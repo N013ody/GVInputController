@@ -14,26 +14,7 @@ GVInputController is a Windows user-mode example for controlling the GameViewer 
 - Sends keyboard key-tap reports.
 - Optionally extracts and installs the GVInput driver package from embedded resources.
 
-## Project Layout
 
-```text
-GVInputController/
-  GVInput.hpp                  Single-header GVInput library
-  GVInputController.cpp         Example command-line program
-  GVInputResources.rc           Optional resource script for embedded driver files
-  GVInputController.sln         Visual Studio solution
-  GVInputController.vcxproj     Visual Studio C++ project
-  drivers/gvinput/              Optional local driver package, not recommended for public repos
-    gvinput.inf
-    gvinput.cat
-    gvinput.sys
-    gvinputmf.inf
-    gvinputmf.cat
-    gvinputmf.sys
-    WdfCoInstaller01009.dll
-```
-
-For a public repository, commit only `GVInput.hpp` and documentation unless you explicitly have permission to redistribute the driver package. Do not commit `.sys`, `.cat`, `.dll`, `.vs`, `x64`, `Debug`, or other build artifacts.
 
 ## Requirements
 
