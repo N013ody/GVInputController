@@ -1,5 +1,7 @@
 # GVInputController
 
+[English README](README_EN.md)
+
 GVInputController 是一个 Windows 用户态 GVInput 调用示例项目，核心能力封装在单头文件库 `GVInput.hpp` 中。
 
 `GVInput.hpp` 负责枚举 GameViewer 的 GVInput 虚拟 HID 设备，并通过 `0x40` vendor output report 发送鼠标和键盘输入。
