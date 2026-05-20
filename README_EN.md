@@ -163,8 +163,3 @@ pnputil /scan-devices
 - `gvinputmf.sys` is a HID mouse filter and should be installed together with `gvinput.sys`.
 - Do not commit third-party driver binaries to a public repository unless redistribution is permitted.
 
-## Remote Repository
-
-```text
-https://github.com/N013ody/GVInputController.git
-```
