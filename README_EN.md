@@ -155,11 +155,3 @@ pnputil /add-driver gvinputmf.inf /install
 pnputil /scan-devices
 ```
 
-## Notes
-
-- Do not copy only `gvinput.sys`; that will not create the HID device.
-- Driver installation requires the full `inf/cat/sys` package.
-- Installation can fail if the driver signature is invalid or blocked by system policy.
-- `gvinputmf.sys` is a HID mouse filter and should be installed together with `gvinput.sys`.
-- Do not commit third-party driver binaries to a public repository unless redistribution is permitted.
-
