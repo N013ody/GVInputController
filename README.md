@@ -155,16 +155,3 @@ pnputil /add-driver gvinputmf.inf /install
 pnputil /scan-devices
 ```
 
-## 注意事项
-
-- 不要只复制 `gvinput.sys`，否则不会创建 HID 设备。
-- 安装需要完整的 `inf/cat/sys` 驱动包。
-- 驱动签名无效或系统策略禁止时，安装会失败。
-- `gvinputmf.sys` 是 HID mouse filter，建议与 `gvinput.sys` 配套安装。
-- 公开仓库不要提交来自第三方安装目录的驱动二进制。
-
-## 远程仓库
-
-```text
-https://github.com/N013ody/GVInputController.git
-```
